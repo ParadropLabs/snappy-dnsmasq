@@ -1,0 +1,11 @@
+name: dnsmasq
+version: 2.74
+vendor: Paradrop Labs
+type: framework
+
+binaries:
+ - name: bin/dnsmasq
+   description: Daemon for running DHCP and DNS server.
+   security-policy:
+       apparmor: meta/dnsmasq.apparmor
+       seccomp: meta/dnsmasq.seccomp
